@@ -1,18 +1,88 @@
-#navbar ul {
-        list-style-type: none;
-        display: inline-flex;
-        float: right;
+#link {
+        text-decoration: none;
+        color: white;
 }
-        #navbar ul li {
-                margin: 10px;     
+#navbar nav {
+        background-color: white;
+        border-bottom: solid #6D9886;
+}
+        #login-button {
+                border: none;
+                color: white;
+                border-radius: 40px;
+                background-color: #6D9886;
+                font-weight: bold;
+                padding: 11.8px;
+                margin: 5px;
+                box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
         }
+        #register-button {
+                border: solid;
+                border-color: #6D9886;
+                border-radius: 40px;
+                color: #6D9886;
+                background-color: white;
+                font-weight: bold;
+                padding: 10px;
+                margin: 5px;
+        }
+                
+                
 
 #footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: darkslategray;
+        height: 10%;
+        background-color: #6D9886;
         color: white;
         text-align: center;
+        padding: 20px 0;
 }
+
+#login-form {
+        padding: 50px;
+        margin: 0 auto;
+}
+        #login-form input {
+                background-color: white;
+                border: none;
+                border-bottom: solid gray;
+                color: black;
+        }
+                #login-form input:focus {
+                        outline: none;
+                }
+        #ButtonSubmit-login {
+                border: none;
+                border-radius: 40px;
+                color: white;
+                background-color: #6D9886;
+                font-weight: bold;
+                padding: 7px;
+                margin: 5px;
+        }
+
+#register-form {
+        padding: 50px;
+        margin: 0 auto;
+}
+        #register-form input {
+                background-color: white;
+                border: none;
+                border-bottom: solid gray;
+                color: black;
+        }
+                #register-form input:focus {
+                        outline: none;
+                }
+        #ButtonSubmit-register {
+                border: none;
+                border-radius: 40px;
+                color: white;
+                background-color: #6D9886;
+                font-weight: bold;
+                padding: 7px;
+                margin: 5px;
+        }

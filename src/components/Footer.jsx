@@ -4,7 +4,7 @@ const Footer = () =>
 {
         return(
                 <footer id="footer">
-                        <div>Instituo Politécnico Formosa</div>
+                        <div>© 2022 Instituto Politécnico Formosa</div>
                 </footer>
         )
 } 
