@@ -1,6 +1,8 @@
 import { Navigate } from 'react-router-dom'
 
-export const PublicRoutes = () =>
+export const PublicRoutes = ({children}) =>
 {
-        return <Navigate to=''/>      
+        return true
+                ? children
+                : console.log("No es igual")
 }

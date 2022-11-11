@@ -3,6 +3,7 @@ import { PublicRoutes } from './PublicRoutes'
 import LandingPage from '../pages/LandingPage'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import PageNotFound from '../pages/PageNotFound'
 
 export const AppRouter = () => {
         return (
@@ -10,8 +11,19 @@ export const AppRouter = () => {
             <Routes>
       
               <Route path='/' exact element={<LandingPage/>}/>
-              <Route path='/login' element={<Login/>}/>
-              <Route path='/register' element={<Register/>}/>
+
+              {/* Rutas publicas */}
+              <Route path="/login" element={
+                <PublicRoutes>
+                  <Login/>
+                </PublicRoutes>
+              }/>
+
+              <Route path="/register" element={
+                <PublicRoutes>
+                  <Register/>
+                </PublicRoutes>
+              }/>
       
             </Routes>
           </BrowserRouter>
