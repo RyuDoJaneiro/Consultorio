@@ -11,12 +11,21 @@ export default function Register() {
                 <form id="register-form">
                     <div className="mb-3">
                       <label htmlFor="UserInput-register" className="form-label">Nombre de usuario</label><br/>
+                      <input type="texto" id="UserInput-register" aria-describedby="emailHelp"/>
+                    </div>
+                    <div className="mb-3">
+                      <label htmlFor="UserInput-register" className="form-label">Correo electrónico</label><br/>
                       <input type="email" id="UserInput-register" aria-describedby="emailHelp"/>
                     </div>
                     <div className="mb-3">
                       <label htmlFor="PasswordInput-register" className="form-label">Contraseña</label><br/>
                       <input type="password" id="PasswordInput-register"></input>
                     </div>
+                    <div className="mb-3">
+                      <label htmlFor="PasswordInput-register" className="form-label">Confirmar Contraseña</label><br/>
+                      <input type="password" id="PasswordInput-register"></input>
+                    </div>
+                    
                     <button type="submit" id='ButtonSubmit-register'>Enviar</button>
                   </form>
                 </fieldset>
